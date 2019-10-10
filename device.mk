@@ -174,6 +174,10 @@ BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Bluetooth component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Binder
 PRODUCT_PACKAGES += \
     libhwbinder \
