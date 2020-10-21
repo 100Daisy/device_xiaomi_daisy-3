@@ -256,6 +256,19 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# QCOM variant
+    TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+    TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+    TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+
+# HALS
+    SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
+    SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+    SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
