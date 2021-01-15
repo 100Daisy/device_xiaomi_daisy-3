@@ -29,6 +29,7 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Adding Derp stuffs
 IS_PHONE := true
