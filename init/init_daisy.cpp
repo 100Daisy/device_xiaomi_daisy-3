@@ -96,4 +96,9 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+
+
+    // Misc
+    property_set("ro.apex.updatable", "true");
+    property_set("ro.oem_unlock_supported", "0");
 }
