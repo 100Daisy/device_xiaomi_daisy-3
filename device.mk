@@ -559,6 +559,3 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl \
     libmediaextractorservice
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
