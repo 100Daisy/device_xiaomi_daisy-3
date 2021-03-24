@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Debloat GAPPS
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
